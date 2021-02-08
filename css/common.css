@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    /* color */
+    --color-bg:#EDEEF2; 
+    --color-very-light-grey:#A2A2A2; 
+    --color-light-grey:#D6DBE5;
+    --color-black:#1D1D1F;
+    --color-mainB:#2F61D2;   
+    /* font-size */
+    --font-1:10px; 
+    --font-2:13px; 
+    --font-3:16px;
+    --font-4:20px;  
+    --font-5:26px;  
+    --font-6:33px;  
+    --font-7:42px;  
+}
+@keyframes showUp{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}

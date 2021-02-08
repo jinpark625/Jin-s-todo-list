@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    /* color */
+    --color-bg:#FBFBFD; 
+    --color-black:#1D1D1F;   
+}
+
+/* html,body{
+    height: 100%;
+} */
+
+body{
+    background: var(--color-bg);
+    font-family: 'Noto Sans KR', sans-serif;
+    /* height: 100vh; */
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+#todolist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.todolist-wrap{
+    max-width: 457px;
+    max-height: 740px;
+    height: 740px;
+    width: 100%;
+    background: white;
+    border-radius: 22px;
+    box-shadow: rgba(0, 0, 0, .09) 4px 12px 40px 6px;
+    position: relative;
+}
+.hamburger-menu{
+    width: 24px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4%;
+    left: 7%;
+    z-index: 3;
+}
+.hamburger-menu li{
+    display: block; 
+    position: absolute;
+    width: 24px; 
+    border-top:4px solid var(--color-black);
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+.hamburger-menu li:first-child{
+    top: 0;
+    left: 0;
+}
+.hamburger-menu li:nth-child(2){
+    top: 8px;
+    right: 0;
+}
+.hamburger-menu li:nth-child(3){
+    top: 16px;
+    right: 0;
+}
+/* task menu */
+.task-menu-wrap{  
+    position: absolute;
+    top: 0;
+    left: 0;  
+    width: 200px;
+    height: 200px;
+    border-radius: 22px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 17%) 7px 9px 15px 2px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task-menu{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3em;
+}
+.task-menu h3{
+    display: inline-block;
+    width: 130px;
+}
+.task-menu h3 span{
+    vertical-align: middle;
+}
+.task-menu h3:first-child{
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 10px;
+}
+.task-menu h3:last-child{
+    padding-top: 10px;
+}
+/* task top */
+.task-top-wrap{
+    position: absolute;
+    top: 0px;
+    border-radius: 22px 22px 0 0;
+    background: url(../img/1.jpg) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 37.434%;
+    z-index: 1;
+}
+/* task bottom */
+.task-bottom-wrap{
+    padding: 40px 40px 0 40px;
+}
+
+
+
+.form,
+.greetings{
+    display: none;
+}
+.showing{
+    display: block;
+}
