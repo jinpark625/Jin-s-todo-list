@@ -6,17 +6,126 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <script defer src="js/clock.js"></script>
     <script defer src="js/greeting.js"></script>
-    <script defer src="js/todo.js"></script>
+    <script defer src="js/todolist.js"></script>
+    <script defer src="js/quote.js"></script>
+    <script defer src="js/weather.js"></script>
+    <script defer src="js/clock.js"></script>
+    <script defer src="js/event.js"></script>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/todo-style.css">
+    <link rel="stylesheet" href="css/media.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="#">
 
 </head>
 <body>
 
-    <section id="todolist">
+
+    <section>
+        <div class="todo-wrap">
+            <div class="todo-header">
+                <span class="userTodo">
+                    Todo List
+                </span>
+                <div>
+                    <ul>
+                        <li class="js-weather">weather</li>
+                        <li class="date">00</li>
+                        <li class="time">00:00</li>
+                        <li class="user">
+                            <input type="file" accept="image/*" id="img-upload">
+                            <button id="img-btn">
+                                <span class="material-icons preview">
+                                    account_circle
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="todo-menu">
+                <div>
+                    <ul class="task-menu">
+                        <li class="overdue">
+                            <span class="material-icons">
+                            hourglass_disabled
+                            </span>
+                            Overdue
+                        </li>
+                        <li class="ongoing">
+                            <span class="material-icons">
+                                hourglass_top
+                            </span>
+                            Ongoing Tasks
+                        </li>
+                        <li class="completed">
+                            <span class="material-icons">
+                                hourglass_full
+                            </span>
+                            Completed Tasks
+                        </li>
+                    </ul>
+                </div>
+                <div class="quote">
+                    <p>Slow and steady win the race<br><br>"Aesop"</p>
+                </div>
+            </div>
+            <div class="todo-list">
+                <ul class="todoList-wrap">
+                    <!-- <li>
+                        <div class="todoList-content">
+                            <div>
+                                <input type="checkbox" class="todoCheck">
+                                <label class="todoCheckLabel"></label>
+                                <p>이건 리스트</p>
+                            </div>
+                            <div class="todo-bin">
+                                <h5>Time Left 00:00</h5>
+                                <span class="material-icons">
+                                    delete_forever
+                                </span>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+                
+                <input type="button" placeholder="Add Task" id="addBtn-input">
+                <button id="addBtn">Add task</button>
+
+                <form class="todo-form scaleTrasnlate">
+                    <textarea class="todo-note" placeholder="Write something here."></textarea>
+                    <input type="text" id="timer">
+                    <label for="timer">Set Timer</label>
+                    <button class="todo-noteBtn">
+                        <span class="material-icons">
+                            add_circle
+                        </span>
+                    </button>
+                </form>
+                <div>
+                    <span>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+            <div class="todo-hamburger">
+                <span class="material-icons">
+                    menu
+                </span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- <section id="todolist">
         <div class="todolist-wrap">
             <ul class="hamburger-menu">
                 <li class="hamburgerBar"></li>
@@ -69,8 +178,9 @@
                 </span>
             </div>
         </div>
-    </section>
+    </section> -->
 
+    
 
     <!-- <div class="js-clock">
         <h1>00:00</h1>

@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'); */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 :root{
     /* color */
     --color-bg:#EDEEF2; 
     --color-very-light-grey:#A2A2A2; 
     --color-light-grey:#D6DBE5;
+    --color-greyM:#FBFBFD;
+    --color-grey:#494947;
+    --color-hover:#F0F0F0;
     --color-black:#1D1D1F;
     --color-mainB:#2F61D2;   
     /* font-size */
@@ -24,4 +27,8 @@
     100%{
         opacity: 1;
     }
+}
+body{
+    color: var(--color-black);
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
 }

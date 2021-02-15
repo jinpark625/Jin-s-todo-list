@@ -39,7 +39,6 @@ function goTodo(){
 function goNextPage(){
     userForm.action= "todo/todo.html";
 }
-
 // time
 function getSendTime(){
     const date = new Date();
