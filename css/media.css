@@ -71,8 +71,11 @@
         font-size: 20px;
     }
     .user-name{
-        width: 150px;
+        width: 80%;
         font-size: 20px;
+    }
+    .user-form button{
+        width: 20%;
     }
     .blink{
         height: 28px;
